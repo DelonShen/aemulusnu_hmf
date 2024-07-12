@@ -15,4 +15,4 @@ def f_G(a, M, σM, d, e, f, g):
 
 
 def p(p0, p1, a):
-    return p0 + (a-0.5)*p1
+    return p0 + (a-1)*p1

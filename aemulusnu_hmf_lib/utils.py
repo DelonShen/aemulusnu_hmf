@@ -47,3 +47,22 @@ class Standardizer:
             raise ValueError("Standardizer has not been fitted. Call fit() first.")
         return X_std * self.std + self.mean
 
+    
+
+class Identity:
+    def __init__(self):
+        self.mean = None
+
+    def fit(self, X):
+        self.mean = -1
+
+    def transform(self, X):
+        if self.mean is None:
+            raise ValueError("Identity has not been fitted. Call fit() first.")
+        return X
+
+    def inverse_transform(self, X_std):
+        if self.mean is None:
+            raise ValueError("Identity has not been fitted. Call fit() first.")
+        return X_std
+
