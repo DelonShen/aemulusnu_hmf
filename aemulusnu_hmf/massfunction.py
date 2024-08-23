@@ -25,7 +25,7 @@ class cosmology:
             'N_ncdm': 1,
             'output': 'mPk mTk',
             'z_pk': '0.0,99',
-            'P_k_max_h/Mpc': 20.,
+            'P_k_max_h/Mpc': 50.,
             'm_ncdm': self.cosmology['nu_mass_ev']/3,
             'deg_ncdm': 3,
             'ncdm_quadrature_strategy': 2,
