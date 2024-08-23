@@ -68,7 +68,7 @@ class ConstantKernel():
         self.const = const
     
     def __call__(self, x1, x2 = None):
-        return self.const * np.eye(len(x1))
+        return self.const 
 
 
 class AdditiveKernel():

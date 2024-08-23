@@ -89,7 +89,7 @@ class cosmology:
         z is reddshift
 
 
-        returns linear matter power spectrum in units of Mpc^3 / h^3
+        returns linear CDM + baryon power spectrum in units of Mpc^3 / h^3
         """
         return np.array([self.pkclass.pk_cb_lin(k_curr * self.h, np.array([z])) for k_curr in k]) * self.h ** 3
 

@@ -8,6 +8,7 @@ setup(
         'numpy',
         'scipy',
         'classy',
+        'pytest'
     ],
     include_package_data=True,
     package_data={'': ['data/*.txt']},
