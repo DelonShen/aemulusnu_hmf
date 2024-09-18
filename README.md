@@ -26,7 +26,7 @@ pytest
 
 # Getting Started
 For a thorough introduction see `Tutorial.ipynb`. For something simple:
-```
+```python
 from aemulusnu_hmf.emulator import dn_dM
 cosmology = {'ns': 0.97,
  'H0': 67.0,

@@ -11,7 +11,7 @@ _c_ = 2.99792458e8 # speed of light in m/s         (CLASS precision)
 G_over_c2 = 4.78538e-20 #Mpc / Msol
 
 class cosmology:
-    def __init__(self, cosmology):
+    def __init__(self, cosmology, fast = False):
         self.cosmology = cosmology
         self.h = self.cosmology['H0']/100
 
@@ -38,6 +38,9 @@ class cosmology:
             'cs2_fld': 1.0,
             'fluid_equation_of_state': "CLP"
         }
+        
+        if(fast):
+            cosmo_dict['ncdm_quadrature_strategy'] = 0
 
 
         self.pkclass = Class()

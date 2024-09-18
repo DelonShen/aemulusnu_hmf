@@ -139,14 +139,14 @@ def predict_params(cosmo_dict, a):
     return param_at_z
 
 @cache
-def _create_cosmology(cosmo_vals_tuple):
+def _create_cosmology(cosmo_vals_tuple, fast = False):
     """
     tuple of parameters made from dict of parameters 
     outputs `aemulusnu_hmf.massfunction.cosmology` object
     """
     print('initializing cosmology. this will only happen once per cosmology')
     curr_cosmo_dict = dict(zip(key_ordering, cosmo_vals_tuple))
-    return cosmology(curr_cosmo_dict)
+    return cosmology(curr_cosmo_dict, fast = fast)
 
 def get_cosmology(cosmo_dict):
     cosmo_vals = [cosmo_dict[curr_key] for curr_key in key_ordering]
@@ -154,9 +154,9 @@ def get_cosmology(cosmo_dict):
 
     return _create_cosmology(cosmo_vals_tuple)
 
-def dn_dM(cosmo_dict, M, a):
+def dn_dM(cosmo_dict, M, a, fast = False):
     """ 
-    cosmo_dict is a dictionary with entries
+    `cosmo_dict` is a dictionary with entries
         - 10^9 As: As * 10^9
         - ns: Spectral index
         - H0: Hubble parameter in [km/s/Mpc]
@@ -164,8 +164,10 @@ def dn_dM(cosmo_dict, M, a):
         - ombh2: Ω_b h^2
         - omch2: Ω_m h^2
         - nu_mass_ev: Neutrino mass sum in [eV]
-    M is the halo mass in units of Msol / h 
-    a is the scale factor
+    `M` is the halo mass in units of Msol / h 
+    `a` is the scale factor
+    `fast` changes the `ncdm_quadrature_strategy` option in CLASS 
+        to decrease evaluation time but also decrease accuracy  
     
     returns the mass function dn/dM in units h^4 / (Mpc^3  Msun)
     """
@@ -175,7 +177,7 @@ def dn_dM(cosmo_dict, M, a):
     #we convert to tuple to make it hashable
     cosmo_vals_tuple = tuple(cosmo_vals)
 
-    curr_cosmology = _create_cosmology(cosmo_vals_tuple)
+    curr_cosmology = _create_cosmology(cosmo_vals_tuple, fast = fast)
     curr_parameters = predict_params(cosmo_dict, a)
 
     #cosmology dependent quantities
