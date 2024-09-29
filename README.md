@@ -41,8 +41,24 @@ mass_function = dn_dM(cosmology, Ms, a = 1.0) #in units of h^4 / (Mpc^3  Msol)
 ```
 
 # Citation
-If you use the Aemulus $\nu$ halo mass function emulator, please cite [ [24XX.XXXXX]](TODO) 
+If you use the Aemulus $\nu$ halo mass function emulator, please cite [ [24XX.XXXXX]](TODO) and [ [2303.09762]](https://arxiv.org/abs/2303.09762)
+
 ```
 @article{Shen:2024XXX, 
 TODO inspire entry}
+```
+
+```
+@article{DeRose:2023dmk,
+    author = "DeRose, Joseph and Kokron, Nickolas and Banerjee, Arka and Chen, Shi-Fan and White, Martin and Wechsler, Risa and Storey-Fisher, Kate and Tinker, Jeremy and Zhai, Zhongxu",
+    title = "{Aemulus \ensuremath{\nu}: precise predictions for matter and biased tracer power spectra in the presence of neutrinos}",
+    eprint = "2303.09762",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    doi = "10.1088/1475-7516/2023/07/054",
+    journal = "JCAP",
+    volume = "07",
+    pages = "054",
+    year = "2023"
+}
 ```
