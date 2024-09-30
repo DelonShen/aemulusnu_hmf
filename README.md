@@ -1,7 +1,7 @@
 # Aemulus ν: Precision halo mass functions in wνCDM cosmologies
 This package contains the the halo mass function emulator described in [ [24XX.XXXXX]](TODO) for cluster mass scales ($\gtrsim 10^{13}M_\odot  / h$) up to redshift $z \eqsim 2$ with support for the whole space of $w\nu {\rm CDM}$ cosmologies allowed by current data. This emulator is built from measurements of halo abundances in the Aemulus $\nu$ suite of simulations that is described in [ [2303.09762]](https://arxiv.org/abs/2303.09762)
 
-The repository with all the numerical studies associatd with the same paper can be found [here](TODO)
+The repository with all the numerical studies associatd with the same paper can be found [here](https://github.com/DelonShen/aemulusnu_hmf_development)
 
 ---
 
