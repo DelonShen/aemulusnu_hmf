@@ -1,5 +1,6 @@
 # Aemulus ν: Precision halo mass functions in wνCDM cosmologies
-This package contains the halo mass function emulator described in [ [24XX.XXXXX]](TODO) for cluster mass scales ($\gtrsim 10^{13}M_\odot  / h$) up to redshift $z \eqsim 2$ with support for the whole space of $w\nu {\rm CDM}$ cosmologies allowed by current data. This emulator is built from measurements of halo abundances in the Aemulus $\nu$ suite of simulations described in [ [2303.09762]](https://arxiv.org/abs/2303.09762).
+This package contains the halo mass function emulator described in [ [2410.00913]](https://arxiv.org/abs/2410.00913) for cluster mass scales ($\gtrsim 10^{13}M_\odot  / h$) up to redshift $z \eqsim 2$ with support for the whole space of $w\nu {\rm CDM}$ cosmologies allowed by current data. This emulator is built from measurements of halo abundances in the Aemulus $\nu$ suite of simulations described in [ [2303.09762]](https://arxiv.org/abs/2303.09762).
+
 
 The repository with all the numerical studies and code to build this emulator can be found [here](https://github.com/DelonShen/aemulusnu_hmf_development)
 
@@ -40,11 +41,19 @@ mass_function = dn_dM(cosmology, Ms, a = 1.0) #in units of h^4 / (Mpc^3  Msol)
 ```
 
 # Citation
-If you use the Aemulus $\nu$ halo mass function emulator, please cite [ [24XX.XXXXX]](TODO) and [ [2303.09762]](https://arxiv.org/abs/2303.09762)
+If you use the Aemulus $\nu$ halo mass function emulator, please cite [ [2410.00913]](https://arxiv.org/abs/2410.00913) and [ [2303.09762]](https://arxiv.org/abs/2303.09762)
 
 ```
-@article{Shen:2024XXX, 
-TODO inspire entry}
+@article{Shen:2024cio,
+    author = "Shen, Delon and Kokron, Nickolas and DeRose, Joseph and Tinker, Jeremy and Wechsler, Risa H. and Banerjee, Arka",
+    collaboration = "Aemulus",
+    title = "{Aemulus $\nu$: Precision halo mass functions in w$\nu$CDM cosmologies}",
+    eprint = "2410.00913",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    month = "10",
+    year = "2024"
+}
 ```
 
 ```
