@@ -47,12 +47,15 @@ If you use the Aemulus $\nu$ halo mass function emulator, please cite [ [2410.00
 @article{Shen:2024cio,
     author = "Shen, Delon and Kokron, Nickolas and DeRose, Joseph and Tinker, Jeremy and Wechsler, Risa H. and Banerjee, Arka",
     collaboration = "Aemulus",
-    title = "{Aemulus $\nu$: Precision halo mass functions in w$\nu$CDM cosmologies}",
+    title = "{Aemulus \ensuremath{\nu}: precision halo mass functions in w\ensuremath{\nu}CDM cosmologies}",
     eprint = "2410.00913",
     archivePrefix = "arXiv",
     primaryClass = "astro-ph.CO",
-    month = "10",
-    year = "2024"
+    doi = "10.1088/1475-7516/2025/03/056",
+    journal = "JCAP",
+    volume = "03",
+    pages = "056",
+    year = "2025"
 }
 ```
 
